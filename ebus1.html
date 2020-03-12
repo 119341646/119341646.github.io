@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">	
+	<head> 
+	
+		<!--Javascript for calculations-->
+		<script>
+			var argSelection = 0;
+			var argDiscount, argVat, argPrice;
+			
+			function calcSub() {
+				if (a.checked == true){
+				argSelection = a.value;
+				}
+				else if (b.checked == true){
+				argSelection = b.value;
+				}
+				else if (c.checked == true){
+				argSelection = c.value;
+				}
+				calcVatTotal(argSelection);
+			}
+			
+			function calcVatTotal(parmSelection){
+				argDiscount = 0.05 * parmSelection;
+				argVat = 0.2 * parmSelection;
+				argPrice = parmSelection -argDiscount +argVat;
+				display();
+			}
+			function display() {
+				document.getElementById("demo1").innerHTML = "The current subtotal is " + "        " + "€" + argSelection;
+				document.getElementById("demo2").innerHTML = "The 5% discount is " + "                " + "-€" + argDiscount.toFixed(2);
+				document.getElementById("demo3").innerHTML = "The 20% Vat is " + "                     " + "+€" + argVat.toFixed(2);
+				document.getElementById("demo4").innerHTML = "The Total is "  + "                  " + "€"+ argPrice.toFixed(2);
+				document.getElementById("bb").style = "border: 1; height: 5px; background: #555; width: 400px; display: flex; position: relative;";
+				
+			}
+			
+			
+
+		</script>
+
+		<title>ebusiness</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+
+	</head>
+	
+	<!--Background style for the body part-->
+	<body style="background-image:
+    -webkit-radial-gradient(rgba(213,173,105,0.15) 50%,transparent),
+    radial-gradient(transparent,rgba(124,9,5, 0.1) 70%),
+    radial-gradient(transparent 60%,rgba(124,9,5, 0.09) 90%),
+    radial-gradient(transparent 80%,rgba(124,9,5, 0.07) 97%);">
+	  
+	
+		<!--button links to each section-->
+		<button class="Button"><a href="./index.html">Home</a></button>
+		<button class="Button"><a href="./startbootstrap-resume-gh-pages/Cv.html">Curriculum Vitae</a></button>
+		<button class="Button"><a href="./interests.html">Interests</a></button>
+		<button class="Button">	<a href="./consulting.html">Strategic Consulting</a></button>
+		<button class="Button"><a href="./ebus1.html">Ebusiness</a> </button>
+		
+		
+		
+
+	<!--headings-->
+	<header>
+	<h1 style="color:#000090;text-align:center;">Ebusiness</h1></header>
+
+		<div class="container">
+		<b><i><h2 style="color: purple">TechStrategies</h2></i></b>
+
+	<!--radio buttons for each option and the cost for each-->
+	<div class="container">
+		<section class="light">
+			<label for="a"><input type="radio" id="a" name="cost" value="200.00" class="input" onclick="calcSub()">
+			<span class="design"></span><span class="text">Option A (€200.00)  Hyperautomation</span></label><br>
+			<label for="b"><input type="radio" id="b" name="cost" value="500.00" class="input" onclick="calcSub()">
+			<span class="design"></span><span class="text">Option B (€500.00) Multiexperience</span></label><br>
+			<label for="c"><input type="radio" id="c" name="cost" value="1000.00" class="input" onclick="calcSub()">
+			<span class="design"></span><span class="text"> Option C (€1000.00) Distributed Cloud </span></label><br>
+			<p id="demo1">The current subtotal is         €200.00</p>
+			<p id="demo2">The 5% discount is                 -€10.00</p>
+			<p id="demo3">The 20% Vat is                      +€40.00</p>
+			<hr id="bb" style="border: 1px; height: 4px; background: #555; width: 400px; display: flex; position: relative;">
+			<p id="demo4">The Total is                   €230.00</p>
+			<input type="button" id="btnCalculate" value="Calculate" onclick="calcSub()">
+			<input type="button" id="btnCalculate" value="Purchase" onclick="confirm('Are you sure you want to place this order?');">
+		</section>
+		</div>
+	
+		<!--copyright logo for website-->
+		<footer>
+			<small>copyright(c)2020 </small>
+		</footer>
+</body>
+	  
+
+	
+
+</html>

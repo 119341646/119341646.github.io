@@ -1,0 +1,109 @@
+
+/*STYLESHEET background style*/
+.div {
+  background-repeat: no-repeat, repeat;
+  background-image: url("img_tree.gif"), url("paper.gif");
+  background-blend-mode: lighten;
+}
+
+/* scrollbar width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* scrollbar Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* scrollbar Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+ /*scrollbar Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+/*Main background style/colour for paragraphs*/
+.container {
+  background-color: #ffefcc; 
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: Arial, Arial;
+}
+
+
+/*Buttons style*/
+.Button {
+	color: purple; 
+	font-size: 16px; 
+	line-height: 16px; 
+	padding: 9px; border-radius: 17px; 
+	font-family: Arial, Arial; font-weight: normal; 
+	text-decoration: none; 
+	font-style: normal; font-variant: normal; 
+	text-transform: none; 
+	background-image: #00005
+	box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; 
+	border: 2px solid rgb(28, 110, 164);
+	display: inline-block;}
+.Button:hover {
+	background: #ffffb3; }
+.Button:active {
+	background: #ffffb3; }
+
+
+/*style of line to divide sections*/
+hr.rounded {
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
+}
+
+/*style of LC results table*/
+.table, td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+
+/*image size*/
+.img {
+	width: 128 ;
+	height: 100;
+	
+}
+
+/*Main body style/size/shape*/
+html,body {
+    height: 100%;
+	text-align: center;
+}
+
+html {
+	display:block;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Background style colour,size,position and effect*/
+body {
+  background: linear-gradient(left, rgba(238,196,135,.5) 0%,rgba(243,207,154,.5) 3%,rgba(248,216,162,.5) 6%,rgba(243,207,154,.5) 6%,rgba(243,207,154,.5) 9%,rgba(241,202,136,.5) 12%,rgba(243,207,154,.5) 15%,rgba(244,208,158,.5) 17%,rgba(243,207,154,.5) 19%,rgba(243,207,154,.5) 21%,rgba(250,221,176,.5) 23%,rgba(250,221,176,.5) 25%,rgba(243,207,154,.5) 27%,rgba(238,200,138,.5) 29%,rgba(243,207,154,.5) 29%,rgba(243,207,154,.5) 32%,rgba(243,207,154,.5) 34%,rgba(243,207,154,.5) 37%,rgba(250,221,176,.5) 40%,rgba(250,221,176,.5) 43%,rgba(243,207,154,.5) 43%,rgba(243,207,154,.5) 44%,rgba(243,207,154,.5) 47%,rgba(238,200,138,.5) 49%,rgba(243,207,154,.5) 52%,rgba(250,221,176,.5) 54%,rgba(244,208,158,.5) 56%,rgba(243,207,154,.5) 59%,rgba(244,208,158,.5) 61%,rgba(250,221,176,.5) 64%,rgba(243,207,154,.5) 64%,rgba(244,208,158,.5) 66%,rgba(243,207,154,.5) 69%,rgba(248,216,162,.5) 71%,rgba(243,207,154,.5) 74%,rgba(243,207,154,.5) 76%,rgba(243,207,154,.5) 77%,rgba(243,207,154,.5) 80%,rgba(250,221,176,.5) 81%,rgba(243,207,154,.5) 83%,rgba(250,221,176,.5) 83%,rgba(250,221,176,.5) 85%,rgba(243,207,154,.5) 87%,rgba(250,221,176,.5) 89%,rgba(250,221,176,.5) 91%,rgba(243,207,154,.5) 92%,rgba(248,216,162,.5) 96%,rgba(243,207,154,.5) 97%,rgba(243,207,154,.5) 97%,rgba(243,207,154,.5) 98%,rgba(243,207,154,.5) 100%),
+linear-gradient(right, rgba(238,196,135,.3) 0%,rgba(243,207,154,.3) 3%,rgba(248,216,162,.3) 6%,rgba(243,207,154,.3) 6%,rgba(243,207,154,.3) 9%,rgba(241,202,136,.3) 12%,rgba(243,207,154,.3) 15%,rgba(244,208,158,.3) 17%,rgba(243,207,154,.3) 19%,rgba(243,207,154,.3) 21%,rgba(250,221,176,.3) 23%,rgba(250,221,176,.3) 25%,rgba(243,207,154,.3) 27%,rgba(238,200,138,.3) 29%,rgba(243,207,154,.3) 29%,rgba(243,207,154,.3) 32%,rgba(243,207,154,.3) 34%,rgba(243,207,154,.3) 37%,rgba(250,221,176,.3) 40%,rgba(250,221,176,.3) 43%,rgba(243,207,154,.3) 43%,rgba(243,207,154,.3) 44%,rgba(243,207,154,.3) 47%,rgba(238,200,138,.3) 49%,rgba(243,207,154,.3) 52%,rgba(250,221,176,.3) 54%,rgba(244,208,158,.3) 56%,rgba(243,207,154,.3) 59%,rgba(244,208,158,.3) 61%,rgba(250,221,176,.3) 64%,rgba(243,207,154,.3) 64%,rgba(244,208,158,.3) 66%,rgba(243,207,154,.3) 69%,rgba(248,216,162,.3) 71%,rgba(243,207,154,.3) 74%,rgba(243,207,154,.3) 76%,rgba(243,207,154,.3) 77%,rgba(243,207,154,.3) 80%,rgba(250,221,176,.3) 81%,rgba(243,207,154,.3) 83%,rgba(250,221,176,.3) 83%,rgba(250,221,176,.3) 85%,rgba(243,207,154,.3) 87%,rgba(250,221,176,.3) 89%,rgba(250,221,176,.3) 91%,rgba(243,207,154,.3) 92%,rgba(248,216,162,.3) 96%,rgba(243,207,154,.3) 97%,rgba(243,207,154,.3) 97%,rgba(243,207,154,.3) 98%,rgba(243,207,154,.3) 100%),
+    linear-gradient(left, rgba(238,196,135,.3) 0%,rgba(243,207,154,.3) 3%,rgba(238,200,138,.3) 49%,rgba(243,207,154,.3) 52%,rgba(250,221,176,.3) 54%,rgba(244,208,158,.3) 56%,rgba(243,207,154,.2) 59%,rgba(244,208,158,.3) 61%,rgba(250,221,176,.3) 64%,rgba(243,207,154,.3) 64%,rgba(244,208,158,.3) 66%,rgba(243,207,154,.3) 69%,rgba(248,216,162,.3) 71%,rgba(243,207,154,.3) 74%,rgba(243,207,154,.3) 76%,rgba(243,207,154,.3) 77%,rgba(243,207,154,.3) 80%,rgba(250,221,176,.3) 81%,rgba(243,207,154,.3) 83%,rgba(250,221,176,.3) 83%,rgba(250,221,176,.3) 85%,rgba(243,207,154,.3) 87%,rgba(250,221,176,.3) 89%,rgba(250,221,176,.3) 91%,rgba(243,207,154,.3) 92%,rgba(248,216,162,.3) 96%,rgba(243,207,154,.3) 97%,rgba(243,207,154,.3) 97%,rgba(243,207,154,.3) 98%,rgba(243,207,154,.3) 100%)
+    ;
+ 
+  background-color: rgb(255, 250, 240);
+  background-size:500px 20px, 300px 20px, 20px 820px;
+  background-position:50% 50%, 70% 70%, 30% 30%;
+}
